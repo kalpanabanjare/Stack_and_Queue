@@ -27,7 +27,7 @@ namespace Stack_and_Queue
                 node.next = Head;
                 Head = node;
             }
-        }
+        }                
         public void StackDisplay()
         {
             Node temp = Head;
@@ -41,6 +41,33 @@ namespace Stack_and_Queue
                 if (temp.next != null)
                     Console.WriteLine("");
                 temp = temp.next;
+            }
+        }
+        public void Peek()
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("{0} is in top of the stack", Head.data);
+        }
+        public void Pop()
+        {
+            if(Head == null)
+            {
+                Console.WriteLine("stack is empty");
+                return ;
+            }
+            Console.WriteLine("value poped is {0}", Head.data);
+            Head = Head.next;
+        }
+        internal void IsEmpty()
+        {
+            while(Head != null)
+            {
+                Peek();
+                Pop();
             }
         }
     }

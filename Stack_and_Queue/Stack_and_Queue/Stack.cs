@@ -26,5 +26,10 @@ namespace Stack_and_Queue
             var val = linklist.Head;
             Console.WriteLine("Top" + val.data);
         }
+        public void Pop(Node node_1)
+        {
+            linklist.Pop();
+        }
+        //Console.WriteLine("Stack is empty");
     }
 }
