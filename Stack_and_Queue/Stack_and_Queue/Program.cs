@@ -30,6 +30,11 @@ namespace Stack_And_Queue
             queue.Enqueue(node_3);            
             queue.DisplayQueue();
             queue.Top();
+
+            queue.dwqueue(node_1);
+            queue.dwqueue(node_2);
+            queue.dwqueue(node_3);
+            queue.DisplayQueue();
         }
 
     }

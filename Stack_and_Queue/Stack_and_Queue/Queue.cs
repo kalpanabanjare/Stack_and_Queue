@@ -27,5 +27,9 @@ namespace Stack_and_Queue
                 var val = linklist.Head;
                 Console.WriteLine("\nTop" + val.data);
             }
+            public void dwqueue(Node node_2)
+            {
+            linklist.dequeue();
+            }
         }
 }

@@ -91,5 +91,15 @@ namespace Stack_and_Queue
                 temp = temp.next;
             }
         }
+        public void dequeue()
+        {
+            if(Head == null)
+            {
+                Console.WriteLine("Queue is empty");
+                return;
+            }
+            Head = Head.next;
+
+        }
     }
 }
