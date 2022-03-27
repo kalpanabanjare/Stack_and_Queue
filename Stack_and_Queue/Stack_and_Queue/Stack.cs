@@ -30,6 +30,5 @@ namespace Stack_and_Queue
         {
             linklist.Pop();
         }
-        //Console.WriteLine("Stack is empty");
     }
 }
