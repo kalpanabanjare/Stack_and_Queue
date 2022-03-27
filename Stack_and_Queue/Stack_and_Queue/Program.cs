@@ -23,6 +23,13 @@ namespace Stack_And_Queue
             stack.Pop(node_1);
             stack.Pop(node_1);
             stack.DisplayStack();
+
+            Queue queue = new Queue();
+            queue.Enqueue(node_1);
+            queue.Enqueue(node_2);
+            queue.Enqueue(node_3);            
+            queue.DisplayQueue();
+            queue.Top();
         }
 
     }

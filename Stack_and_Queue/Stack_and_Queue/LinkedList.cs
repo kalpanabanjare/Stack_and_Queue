@@ -70,5 +70,26 @@ namespace Stack_and_Queue
                 Pop();
             }
         }
+        internal void DisplayQueue()
+        {
+            Node temp = Head;
+            if (temp == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                Console.WriteLine("Queue as follows: ");
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data);
+                if (temp.next != null)
+                {
+                    Console.Write("->");
+                }
+                temp = temp.next;
+            }
+        }
     }
 }
